@@ -1,11 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eatly</title>
-</head>
-<body>
-  <h1>Hello, world!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eatly</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a class="main-header__logo" href="#" aria-current="page">
+        <span class="visually-hidden">Main page.</span>
+
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo.svg" width="120" height="42">
+          <source type="image/svg+xml" media="(min-width: 1024px)" srcset="images/logo.svg" width="80" height="30">
+          <img class="main-header__logo-image" src="images/logo.svg" width="112" height="42" alt="Logo Eatly.">
+        </picture>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="menu.html">Menu</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="blog.html">Blog</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="contacts.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="main-nav__buttons">
+          <button class="main-nav__button" type="button">Login</button>
+          <button class="main-nav__button button button--primary" type="button">Sign up</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__wrapper">
+          <div class="hero__text">
+            <span class="hero__about-users">Over 1000 users</span>
+            <h1 class="hero__title">Enjoy foods all over the world</h1>
+            <p class="hero__description">EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get paychecks up to two days early. Get a <span class="hero__description--color">$20 bonus</span>.</p>
+
+            <div class="hero__buttons">
+              <a class="hero__button button button--primary" href="#">Get started</a>
+              <a class="hero__button button button--secondary" href="#">Go pro</a>
+            </div>
+
+            <div class="hero__raiting raiting">
+              <picture>
+                <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/raiting-logo.svg" width="123" height="30">
+                <source type="image/svg+xml" media="(min-width: 1024px)" srcset="images/raiting-logo.svg" width="87" height="21">
+                <img class="raiting__logo" src="images/raiting-logo.svg" width="98" height="24" alt="Logo Trustpilot."/>
+              </picture>
+              <span class="raiting__wrapper">
+                <span class="raiting__stars visually-hidden">5 stars.</span>
+                <span class="raiting__amount">4900+</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <h2 class="visually-hidden">Our features.</h2>
+
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__title">10K+</h3>
+            <p class="features__description">Satisfied costumers all great over the world</p>
+          </li>
+
+          <li class="features__item">
+            <h3 class="features__title">4M</h3>
+            <p class="features__description">Healthy dishes sold including milk shakes smooth</p>
+          </li>
+
+          <li class="features__item">
+            <h3 class="features__title">99.99%</h3>
+            <p class="features__description">Reliable customer support we provide great experiences</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="download">
+        <h2 class="download__title">Premium <span class="download__title--color">quality</span> for your health</h2>
+
+        <ul class="download__list">
+          <li class="download__item">
+            <p class="download__description">Premium quality food is made with ingredients that are packed with essential vitamins, minerals.</p>
+          </li>
+          <li class="download__item">
+            <p class="download__description">These foods promote overall wellness by support healthy digestion and boosting immunity</p>
+          </li>
+        </ul>
+
+        <a class="download__button button button--primary" href="#">Download</a>
+      </section>
+
+      <section class="top">
+        <h2 class="top__title section-title">Our top restaurants</h2>
+
+        <ul class="top__list">
+          <li class="top__item card">
+            <a class="card__link" href="#">
+              <picture>
+                <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-image-1@1x.jpg 1px, images/top-image-1@2x.jpg 2x" width="396" height="176">
+                <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-image-1@1x.jpg 1px, images/top-image-1@2x.jpg 2x" width="281" height="125">
+                <img class="card__image" src="images/top-image-1@1x.jpg" srcset="images/top-image-1@2x.jpg 2x" width="315" height="140" alt="Restaurant food picture.">
+              </picture>
+
+              <div class="card__content">
+                <span class="card__tag card__tag--healthy">Healthy</span>
+                <h3 class="card__title">The Chicken King</h3>
+
+                <span class="card__info">
+                  <span class="card__time">24min</span>
+                  <span class="card__raiting">4.8</span>
+                </span>
+
+                <button class="card__button card__button--bookmark" type="button">
+                  <span class="visually-hidden">Add to bookmarks.</span>
+                </button>
+              </div>
+            </a>
+          </li>
+
+          <li class="top__item card">
+            <a class="card__link" href="#">
+              <picture>
+                <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-image-2@1x.jpg 1px, images/top-image-2@2x.jpg 2x" width="396" height="176">
+                <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-image-2@1x.jpg 1px, images/top-image-2@2x.jpg 2x" width="281" height="125">
+                <img class="card__image" src="images/top-image-2@1x.jpg" srcset="images/top-image-2@2x.jpg 2x" width="315" height="140" alt="Restaurant food picture.">
+              </picture>
+
+              <div class="card__content">
+                <span class="card__tag card__tag--trending">Trending</span>
+                <h3 class="card__title">The Burger King</h3>
+
+                <span class="card__info">
+                  <span class="card__time">24min</span>
+                  <span class="card__raiting">4.9</span>
+                </span>
+
+                <button class="card__button card__button--bookmark" type="button">
+                  <span class="visually-hidden">Add to bookmarks.</span>
+                </button>
+              </div>
+            </a>
+          </li>
+
+          <li class="top__item card">
+            <a class="card__link" href="#">
+              <picture>
+                <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-image-1@1x.jpg 1px, images/top-image-1@2x.jpg 2x" width="396" height="176">
+                <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-image-1@1x.jpg 1px, images/top-image-1@2x.jpg 2x" width="281" height="125">
+                <img class="card__image" src="images/top-image-1@1x.jpg" srcset="images/top-image-1@2x.jpg 2x" width="315" height="140" alt="Restaurant food picture.">
+              </picture>
+
+              <div class="card__content">
+                <span class="card__tag card__tag--healthy">Healthy</span>
+                <h3 class="card__title">The Chicken King</h3>
+
+                <span class="card__info">
+                  <span class="card__time">24min</span>
+                  <span class="card__raiting">4.8</span>
+                </span>
+
+                <button class="card__button card__button--bookmark" type="button">
+                  <span class="visually-hidden">Add to bookmarks.</span>
+                </button>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+        <a class="top__link" href="menu.html">View all</a>
+      </section>
+    </main>
+  </body>
 </html>
