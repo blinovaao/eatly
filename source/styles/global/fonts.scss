@@ -1,0 +1,11 @@
+$ff-inter: "Inter", "Arial", sans-serif;
+$ff-manrope: "Manrope", "Arial", sans-serif;
+$ff-plus-jakarta-sans: "Plus Jakarta Sans", "Arial", sans-serif;
+$ff-poppins: "Poppins", "Arial", sans-serif;
+$ff-public-sans: "Public Sans", "Arial", sans-serif;
+
+@include font-face("Inter", 400, normal, url("../../fonts/inter/Inter-Regular.woff2") format("woff2"));
+@include font-face("Manrope", 400, normal, url("../../fonts/manrope/Manrope-Regular.woff2") format("woff2"));
+@include font-face("Plus Jakarta Sans", 400, normal, url("../../fonts/plus-jakarta-sans/PlusJakartaSans-Regular.woff2") format("woff2"));
+@include font-face("Poppins", 400, normal, url("../../fonts/poppins/Poppins-Regular.woff2") format("woff2"));
+@include font-face("Public Sans", 700, normal, url("../../fonts/public-sans/PublicSans-Bold.woff2") format("woff2"));

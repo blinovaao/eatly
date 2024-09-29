@@ -1,0 +1,28 @@
+.button {
+  display: inline-block;
+
+  padding: 14px 25px 12px 24px;
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  font-size: 13px;
+  line-height: 20px;
+  font-family: $ff-poppins;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-decoration: none;
+
+  background-color: transparent;
+
+  &--primary {
+    background-color: $color-rich-blue;
+    color: $color-white;
+  }
+
+  &--secondary {
+    border-color: $color-rich-blue;
+
+    color: $color-rich-blue;
+  }
+}

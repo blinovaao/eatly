@@ -1,0 +1,25 @@
+.site-list {
+  @include list-style;
+
+  background-color: #c5bfed96;
+}
+
+.site-list__item {
+  padding: 15px 30px;
+
+  &--active {
+    background-color: $color-rich-blue;
+  }
+}
+
+.site-list__link {
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: $color-rich-blue;
+}
+
+.site-list__item--active .site-list__link {
+  color: $color-white;
+}

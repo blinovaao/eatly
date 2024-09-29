@@ -1,51 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eatly</title>
+    <link rel="preload" href="fonts/inter/Inter-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/manrope/Manrope-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/poppins/Poppins-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
-    <header class="main-header">
-      <a class="main-header__logo" href="#" aria-current="page">
-        <span class="visually-hidden">Main page.</span>
 
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo.svg" width="120" height="42">
-          <source type="image/svg+xml" media="(min-width: 1024px)" srcset="images/logo.svg" width="80" height="30">
-          <img class="main-header__logo-image" src="images/logo.svg" width="112" height="42" alt="Logo Eatly.">
-        </picture>
-      </a>
+  <body class="page__body">
+    <header class="main-header container">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="#" aria-current="page">
+          <span class="visually-hidden">Main page.</span>
 
-      <nav class="header-nav">
-        <ul class="header-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="menu.html">Menu</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="blog.html">Blog</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="pricing.html">Pricing</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="contacts.html">Contact</a>
-          </li>
-        </ul>
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo.svg" width="120" height="42">
+            <source type="image/svg+xml" media="(min-width: 1024px)" srcset="images/logo.svg" width="80" height="30">
+            <img class="main-header__logo-image" src="images/logo.svg" width="112" height="43" alt="Logo Eatly.">
+          </picture>
+        </a>
 
-        <div class="header-nav__buttons">
-          <button class="header-nav__button" type="button">Login</button>
-          <button class="header-nav__button button button--primary" type="button">Sign up</button>
-        </div>
-      </nav>
+        <nav class="header-nav">
+          <button class="header-nav__toggle" type="button">
+            <span class="visually-hidden">Open menu.</span>
+          </button>
+
+          <div class="header-nav__wrapper">
+            <ul class="header-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="menu.html">Menu</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="blog.html">Blog</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="contacts.html">Contact</a>
+              </li>
+            </ul>
+
+            <div class="header-nav__buttons">
+              <button class="header-nav__button button button--secondary" type="button">Login</button>
+              <button class="header-nav__button button button--primary" type="button">Sign up</button>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero container">
         <div class="hero__wrapper">
           <div class="hero__text">
             <span class="hero__about-users">Over 1000 users</span>
-            <h1 class="hero__title">Enjoy foods all over the world</h1>
+            <h1 class="hero__title">Enjoy foods <span class="hero__title--mobile-hidden">all </span>over <span class="hero__title--mobile-hidden">the </span><span class="hero__title--color">world</span></h1>
             <p class="hero__description">EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get paychecks up to two days early. Get a <span class="hero__description--color">$20 bonus</span>.</p>
 
             <div class="hero__buttons">
@@ -60,294 +73,306 @@
                 <img class="raiting__logo" src="images/raiting-logo.svg" width="98" height="24" alt="Logo Trustpilot."/>
               </picture>
               <span class="raiting__wrapper">
-                <span class="raiting__stars visually-hidden">5 stars.</span>
+                <span class="raiting__stars">
+                  <span class="visually-hidden">5 stars.</span>
+                </span>
                 <span class="raiting__amount">4900+</span>
               </span>
             </div>
           </div>
         </div>
+
+        <div class="hero-image"></div>
       </section>
 
       <section class="features">
-        <h2 class="visually-hidden">Our features.</h2>
+        <div class="features__wrapper">
+          <h2 class="visually-hidden">Our features.</h2>
 
-        <ul class="features__list">
-          <li class="features__item">
-            <h3 class="features__title">10K+</h3>
-            <p class="features__description">Satisfied costumers all great over the world</p>
-          </li>
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__title">10K+</h3>
+              <p class="features__description">Satisfied costumers<br> all great over the world</p>
+            </li>
 
-          <li class="features__item">
-            <h3 class="features__title">4M</h3>
-            <p class="features__description">Healthy dishes sold including milk shakes smooth</p>
-          </li>
+            <li class="features__item">
+              <h3 class="features__title">4M</h3>
+              <p class="features__description">Healthy dishes sold<br> including milk shakes smooth</p>
+            </li>
 
-          <li class="features__item">
-            <h3 class="features__title">99.99%</h3>
-            <p class="features__description">Reliable customer support we provide great experiences</p>
-          </li>
-        </ul>
+            <li class="features__item">
+              <h3 class="features__title">99.99%</h3>
+              <p class="features__description">Reliable customer support<br> we provide great experiences</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section class="download">
-        <h2 class="download__title">Premium <span class="download__title--color">quality</span> for your health</h2>
+      <section class="download container">
+        <div class="download__wrapper">
+          <h2 class="download__title">Premium <span class="download__title--color">quality</span> for your health</h2>
 
-        <ul class="download__list">
-          <li class="download__item">
-            <p class="download__description">Premium quality food is made with ingredients that are packed with essential vitamins, minerals.</p>
-          </li>
-          <li class="download__item">
-            <p class="download__description">These foods promote overall wellness by support healthy digestion and boosting immunity</p>
-          </li>
-        </ul>
+          <ul class="download__list">
+            <li class="download__item">
+              <p class="download__description">Premium quality food is made with ingredients that are packed with essential vitamins, minerals.</p>
+            </li>
+            <li class="download__item">
+              <p class="download__description">These foods promote overall wellness by support healthy digestion and boosting immunity</p>
+            </li>
+          </ul>
 
-        <a class="download__button button button--primary" href="#">Download</a>
+          <a class="download__button button button--primary" href="#">Download</a>
+        </div>
       </section>
 
-      <section class="top-restaurants">
-        <h2 class="top-restaurants__title section-title">Our top restaurants</h2>
+      <section class="top-restaurants container">
+        <div class="top-restaurants__wrapper">
+          <h2 class="top-restaurants__title section-title">Our top restaurants</h2>
 
-        <ul class="top-restaurants__list">
-          <li class="top-restaurants__item card">
-            <a class="card__link" href="#">
-              <picture>
-                <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-restaurants-image-1@1x.jpg 1px, images/top-restaurants-image-1@2x.jpg 2x" width="396" height="176">
-                <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-restaurants-image-1@1x.jpg 1px, images/top-restaurants-image-1@2x.jpg 2x" width="281" height="125">
-                <img class="card__image" src="images/top-restaurants-image-1@1x.jpg" srcset="images/top-restaurants-image-1@2x.jpg 2x" width="315" height="140" alt="Restaurant food picture.">
-              </picture>
+          <ul class="top-restaurants__list">
+            <li class="top-restaurants__item card">
+              <a class="card__link" href="#">
+                <picture>
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-restaurants-image-1@1x.jpg 1px, images/top-restaurants-image-1@2x.jpg 2x" width="396" height="176">
+                  <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-restaurants-image-1@1x.jpg 1px, images/top-restaurants-image-1@2x.jpg 2x" width="281" height="125">
+                  <img class="card__image" src="images/top-restaurants-image-1@1x.jpg" srcset="images/top-restaurants-image-1@2x.jpg 2x" width="315" height="140" alt="Restaurant food picture.">
+                </picture>
 
-              <div class="card__content">
-                <span class="card__tag card__tag--healthy">Healthy</span>
-                <h3 class="card__title">The Chicken King</h3>
+                <div class="card__content">
+                  <span class="card__tag card__tag--healthy">Healthy</span>
+                  <h3 class="card__title">The Chicken King</h3>
 
-                <span class="card__info">
-                  <span class="card__time">24min</span>
-                  <span class="card__raiting">4.8</span>
-                </span>
+                  <span class="card__info">
+                    <span class="card__time">24min</span>
+                    <span class="card__raiting">4.8</span>
+                  </span>
 
-                <button class="card__button card__button--bookmark" type="button">
-                  <span class="visually-hidden">Add to bookmarks.</span>
+                  <button class="card__button card__button--bookmark" type="button">
+                    <span class="visually-hidden">Add to bookmarks.</span>
+                  </button>
+                </div>
+              </a>
+            </li>
+
+            <li class="top-restaurants__item card">
+              <a class="card__link" href="#">
+                <picture>
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-restaurants-image-2@1x.jpg 1px, images/top-restaurants-image-2@2x.jpg 2x" width="396" height="176">
+                  <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-restaurants-image-2@1x.jpg 1px, images/top-restaurants-image-2@2x.jpg 2x" width="281" height="125">
+                  <img class="card__image" src="images/top-restaurants-image-2@1x.jpg" srcset="images/top-restaurants-image-2@2x.jpg 2x" width="315" height="140" alt="Restaurant food picture.">
+                </picture>
+
+                <div class="card__content">
+                  <span class="card__tag card__tag--trending">Trending</span>
+                  <h3 class="card__title">The Burger King</h3>
+
+                  <span class="card__info">
+                    <span class="card__time">24min</span>
+                    <span class="card__raiting">4.9</span>
+                  </span>
+
+                  <button class="card__button card__button--bookmark" type="button">
+                    <span class="visually-hidden">Add to bookmarks.</span>
+                  </button>
+                </div>
+              </a>
+            </li>
+
+            <li class="top-restaurants__item card">
+              <a class="card__link" href="#">
+                <picture>
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-restaurants-image-1@1x.jpg 1px, images/top-restaurants-image-1@2x.jpg 2x" width="396" height="176">
+                  <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-restaurants-image-1@1x.jpg 1px, images/top-restaurants-image-1@2x.jpg 2x" width="281" height="125">
+                  <img class="card__image" src="images/top-restaurants-image-1@1x.jpg" srcset="images/top-restaurants-image-1@2x.jpg 2x" width="315" height="140" alt="Restaurant food picture.">
+                </picture>
+
+                <div class="card__content">
+                  <span class="card__tag card__tag--healthy">Healthy</span>
+                  <h3 class="card__title">The Chicken King</h3>
+
+                  <span class="card__info">
+                    <span class="card__time">24min</span>
+                    <span class="card__raiting">4.8</span>
+                  </span>
+
+                  <button class="card__button card__button--bookmark" type="button">
+                    <span class="visually-hidden">Add to bookmarks.</span>
+                  </button>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <a class="top-restaurants__link" href="menu.html">View all</a>
+        </div>
+      </section>
+
+      <section class="top-dishes container">
+        <div class="top-dishes__wrapper">
+          <h2 class="top-dishes__title section-title">Our top <span class="top-dishes__title--color">dishes</span></h2>
+
+          <ul class="top-dishes__list">
+            <li class="top-dishes__item card">
+              <a class="card__link" href="#">
+                <button class="card__button card__button--favourite">
+                  <span class="visually-hidden">Add to favourite.</span>
                 </button>
-              </div>
-            </a>
-          </li>
 
-          <li class="top-restaurants__item card">
-            <a class="card__link" href="#">
-              <picture>
-                <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-restaurants-image-2@1x.jpg 1px, images/top-restaurants-image-2@2x.jpg 2x" width="396" height="176">
-                <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-restaurants-image-2@1x.jpg 1px, images/top-restaurants-image-2@2x.jpg 2x" width="281" height="125">
-                <img class="card__image" src="images/top-restaurants-image-2@1x.jpg" srcset="images/top-restaurants-image-2@2x.jpg 2x" width="315" height="140" alt="Restaurant food picture.">
-              </picture>
+                <picture>
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-dishes-image-1@1x.jpg 1x, images/top-dishes-image-1@2x.jpg 2x" width="183" height="183">
+                  <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-dishes-image-1@1x.jpg 1x, images/top-dishes-image-1@2x.jpg 2x" width="130" height="130">
+                  <img class="card__image" src="images/top-dishes-image-1@1x.jpg" srcset="images/top-dishes-image-1@2x.jpg 2x" width="119" height="119" alt="Food image.">
+                </picture>
 
-              <div class="card__content">
-                <span class="card__tag card__tag--trending">Trending</span>
-                <h3 class="card__title">The Burger King</h3>
+                <span class="card__content">
+                  <span class="card__tag card__tag--healthy">Healthy</span>
+                  <h3 class="card__title">Chicken hell</h3>
 
-                <span class="card__info">
-                  <span class="card__time">24min</span>
-                  <span class="card__raiting">4.9</span>
+                  <span class="card__info">
+                    <span class="card__time">24min</span>
+                    <span class="card__raiting">4.8</span>
+                  </span>
+
+                  <span class="card__price-info">
+                    <span class="card__price">$12<span class="card__price--small">.99</span></span>
+                    <button class="card__button card__button--add">
+                      <span class="visually-hidden">Add to bookmarks.</span>
+                    </button>
+                  </span>
                 </span>
+              </a>
+            </li>
 
-                <button class="card__button card__button--bookmark" type="button">
-                  <span class="visually-hidden">Add to bookmarks.</span>
+            <li class="top-dishes__item card">
+              <a class="card__link" href="#">
+                <button class="card__button card__button--favourite">
+                  <span class="visually-hidden">Add to favourite.</span>
                 </button>
-              </div>
-            </a>
-          </li>
 
-          <li class="top-restaurants__item card">
-            <a class="card__link" href="#">
-              <picture>
-                <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-restaurants-image-1@1x.jpg 1px, images/top-restaurants-image-1@2x.jpg 2x" width="396" height="176">
-                <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-restaurants-image-1@1x.jpg 1px, images/top-restaurants-image-1@2x.jpg 2x" width="281" height="125">
-                <img class="card__image" src="images/top-restaurants-image-1@1x.jpg" srcset="images/top-restaurants-image-1@2x.jpg 2x" width="315" height="140" alt="Restaurant food picture.">
-              </picture>
+                <picture>
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-dishes-image-2@1x.jpg 1x, images/top-dishes-image-2@2x.jpg 2x" width="183" height="183">
+                  <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-dishes-image-2@1x.jpg 1x, images/top-dishes-image-2@2x.jpg 2x" width="130" height="130">
+                  <img class="card__image" src="images/top-dishes-image-2@1x.jpg" srcset="images/top-dishes-image-2@2x.jpg 2x" width="119" height="119" alt="Food image.">
+                </picture>
 
-              <div class="card__content">
-                <span class="card__tag card__tag--healthy">Healthy</span>
-                <h3 class="card__title">The Chicken King</h3>
+                <span class="card__content">
+                  <span class="card__tag card__tag--trending">Trending</span>
+                  <h3 class="card__title">Swe dish</h3>
 
-                <span class="card__info">
-                  <span class="card__time">24min</span>
-                  <span class="card__raiting">4.8</span>
+                  <span class="card__info">
+                    <span class="card__time">34min</span>
+                    <span class="card__raiting">4.9</span>
+                  </span>
+
+                  <span class="card__price-info">
+                    <span class="card__price">$19<span class="card__price--small">.99</span></span>
+                    <button class="card__button card__button--add">
+                      <span class="visually-hidden">Add to bookmarks.</span>
+                    </button>
+                  </span>
                 </span>
+              </a>
+            </li>
 
-                <button class="card__button card__button--bookmark" type="button">
-                  <span class="visually-hidden">Add to bookmarks.</span>
+            <li class="top-dishes__item card">
+              <a class="card__link" href="#">
+                <button class="card__button card__button--favourite">
+                  <span class="visually-hidden">Add to favourite.</span>
                 </button>
-              </div>
-            </a>
-          </li>
-        </ul>
 
-        <a class="top-restaurants__link" href="menu.html">View all</a>
+                <picture>
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-dishes-image-3@1x.jpg 1x, images/top-dishes-image-3@2x.jpg 2x" width="183" height="183">
+                  <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-dishes-image-3@1x.jpg 1x, images/top-dishes-image-3@2x.jpg 2x" width="130" height="130">
+                  <img class="card__image" src="images/top-dishes-image-3@1x.jpg" srcset="images/top-dishes-image-3@2x.jpg 2x" width="119" height="119" alt="Food image.">
+                </picture>
+
+                <span class="card__content">
+                  <span class="card__tag card__tag--supreme">Supreme</span>
+                  <h3 class="card__title">Swe dish</h3>
+
+                  <span class="card__info">
+                    <span class="card__time">34min</span>
+                    <span class="card__raiting">4.9</span>
+                  </span>
+
+                  <span class="card__price-info">
+                    <span class="card__price">$19<span class="card__price--small">.99</span></span>
+                    <button class="card__button card__button--add">
+                      <span class="visually-hidden">Add to bookmarks.</span>
+                    </button>
+                  </span>
+                </span>
+              </a>
+            </li>
+
+            <li class="top-dishes__item card">
+              <a class="card__link" href="#">
+                <button class="card__button card__button--favourite">
+                  <span class="visually-hidden">Add to favourite.</span>
+                </button>
+
+                <picture>
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-dishes-image-1@1x.jpg 1x, images/top-dishes-image-1@2x.jpg 2x" width="183" height="183">
+                  <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-dishes-image-1@1x.jpg 1x, images/top-dishes-image-1@2x.jpg 2x" width="130" height="130">
+                  <img class="card__image" src="images/top-dishes-image-1@1x.jpg" srcset="images/top-dishes-image-1@2x.jpg 2x" width="119" height="119" alt="Food image.">
+                </picture>
+
+                <span class="card__content">
+                  <span class="card__tag card__tag--healthy">Healthy</span>
+                  <h3 class="card__title">Chicken hell</h3>
+
+                  <span class="card__info">
+                    <span class="card__time">24min</span>
+                    <span class="card__raiting">4.8</span>
+                  </span>
+
+                  <span class="card__price-info">
+                    <span class="card__price">$12<span class="card__price--small">.99</span></span>
+                    <button class="card__button card__button--add">
+                      <span class="visually-hidden">Add to bookmarks.</span>
+                    </button>
+                  </span>
+                </span>
+              </a>
+            </li>
+
+            <li class="top-dishes__item card">
+              <a class="card__link" href="#">
+                <button class="card__button card__button--favourite">
+                  <span class="visually-hidden">Add to favourite.</span>
+                </button>
+
+                <picture>
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-dishes-image-2@1x.jpg 1x, images/top-dishes-image-2@2x.jpg 2x" width="183" height="183">
+                  <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-dishes-image-2@1x.jpg 1x, images/top-dishes-image-2@2x.jpg 2x" width="130" height="130">
+                  <img class="card__image" src="images/top-dishes-image-2@1x.jpg" srcset="images/top-dishes-image-2@2x.jpg 2x" width="119" height="119" alt="Food image.">
+                </picture>
+
+                <span class="card__content">
+                  <span class="card__tag card__tag--trending">Trending</span>
+                  <h3 class="card__title">Swe dish</h3>
+
+                  <span class="card__info">
+                    <span class="card__time">34min</span>
+                    <span class="card__raiting">4.9</span>
+                  </span>
+
+                  <span class="card__price-info">
+                    <span class="card__price">$19<span class="card__price--small">.99</span></span>
+                    <button class="card__button card__button--add">
+                      <span class="visually-hidden">Add to bookmarks.</span>
+                    </button>
+                  </span>
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <a class="top-dishes__link" href="#"></a>
+        </div>
       </section>
 
-      <section class="top-dishes">
-        <h2 class="top-dishes__title section-title">Our top <span class="top-dishes__title--color">dishes</span></h2>
-
-        <ul class="top-dishes__list">
-          <li class="top-dishes__item card">
-            <a class="card__link" href="#">
-              <button class="card__button card__button--favourite">
-                <span class="visually-hidden">Add to favourite.</span>
-              </button>
-
-              <picture>
-                <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-dishes-image-1@1x.jpg 1x, images/top-dishes-image-1@2x.jpg 2x" width="183" height="183">
-                <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-dishes-image-1@1x.jpg 1x, images/top-dishes-image-1@2x.jpg 2x" width="130" height="130">
-                <img class="card__image" src="images/top-dishes-image-1@1x.jpg" srcset="images/top-dishes-image-1@2x.jpg 2x" width="119" height="119" alt="Food image.">
-              </picture>
-
-              <span class="card__content">
-                <span class="card__tag card__tag--healthy">Healthy</span>
-                <h3 class="card__title">Chicken hell</h3>
-
-                <span class="card__info">
-                  <span class="card__time">24min</span>
-                  <span class="card__raiting">4.8</span>
-                </span>
-
-                <span class="card__price-info">
-                  <span class="card__price">$12<span class="card__price--small">.99</span></span>
-                  <button class="card__button card__button--add">
-                    <span class="visually-hidden">Add to bookmarks.</span>
-                  </button>
-                </span>
-              </span>
-            </a>
-          </li>
-
-          <li class="top-dishes__item card">
-            <a class="card__link" href="#">
-              <button class="card__button card__button--favourite">
-                <span class="visually-hidden">Add to favourite.</span>
-              </button>
-
-              <picture>
-                <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-dishes-image-2@1x.jpg 1x, images/top-dishes-image-2@2x.jpg 2x" width="183" height="183">
-                <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-dishes-image-2@1x.jpg 1x, images/top-dishes-image-2@2x.jpg 2x" width="130" height="130">
-                <img class="card__image" src="images/top-dishes-image-2@1x.jpg" srcset="images/top-dishes-image-2@2x.jpg 2x" width="119" height="119" alt="Food image.">
-              </picture>
-
-              <span class="card__content">
-                <span class="card__tag card__tag--trending">Trending</span>
-                <h3 class="card__title">Swe dish</h3>
-
-                <span class="card__info">
-                  <span class="card__time">34min</span>
-                  <span class="card__raiting">4.9</span>
-                </span>
-
-                <span class="card__price-info">
-                  <span class="card__price">$19<span class="card__price--small">.99</span></span>
-                  <button class="card__button card__button--add">
-                    <span class="visually-hidden">Add to bookmarks.</span>
-                  </button>
-                </span>
-              </span>
-            </a>
-          </li>
-
-          <li class="top-dishes__item card">
-            <a class="card__link" href="#">
-              <button class="card__button card__button--favourite">
-                <span class="visually-hidden">Add to favourite.</span>
-              </button>
-
-              <picture>
-                <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-dishes-image-3@1x.jpg 1x, images/top-dishes-image-3@2x.jpg 2x" width="183" height="183">
-                <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-dishes-image-3@1x.jpg 1x, images/top-dishes-image-3@2x.jpg 2x" width="130" height="130">
-                <img class="card__image" src="images/top-dishes-image-3@1x.jpg" srcset="images/top-dishes-image-3@2x.jpg 2x" width="119" height="119" alt="Food image.">
-              </picture>
-
-              <span class="card__content">
-                <span class="card__tag card__tag--supreme">Supreme</span>
-                <h3 class="card__title">Swe dish</h3>
-
-                <span class="card__info">
-                  <span class="card__time">34min</span>
-                  <span class="card__raiting">4.9</span>
-                </span>
-
-                <span class="card__price-info">
-                  <span class="card__price">$19<span class="card__price--small">.99</span></span>
-                  <button class="card__button card__button--add">
-                    <span class="visually-hidden">Add to bookmarks.</span>
-                  </button>
-                </span>
-              </span>
-            </a>
-          </li>
-
-          <li class="top-dishes__item card">
-            <a class="card__link" href="#">
-              <button class="card__button card__button--favourite">
-                <span class="visually-hidden">Add to favourite.</span>
-              </button>
-
-              <picture>
-                <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-dishes-image-1@1x.jpg 1x, images/top-dishes-image-1@2x.jpg 2x" width="183" height="183">
-                <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-dishes-image-1@1x.jpg 1x, images/top-dishes-image-1@2x.jpg 2x" width="130" height="130">
-                <img class="card__image" src="images/top-dishes-image-1@1x.jpg" srcset="images/top-dishes-image-1@2x.jpg 2x" width="119" height="119" alt="Food image.">
-              </picture>
-
-              <span class="card__content">
-                <span class="card__tag card__tag--healthy">Healthy</span>
-                <h3 class="card__title">Chicken hell</h3>
-
-                <span class="card__info">
-                  <span class="card__time">24min</span>
-                  <span class="card__raiting">4.8</span>
-                </span>
-
-                <span class="card__price-info">
-                  <span class="card__price">$12<span class="card__price--small">.99</span></span>
-                  <button class="card__button card__button--add">
-                    <span class="visually-hidden">Add to bookmarks.</span>
-                  </button>
-                </span>
-              </span>
-            </a>
-          </li>
-
-          <li class="top-dishes__item card">
-            <a class="card__link" href="#">
-              <button class="card__button card__button--favourite">
-                <span class="visually-hidden">Add to favourite.</span>
-              </button>
-
-              <picture>
-                <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-dishes-image-2@1x.jpg 1x, images/top-dishes-image-2@2x.jpg 2x" width="183" height="183">
-                <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-dishes-image-2@1x.jpg 1x, images/top-dishes-image-2@2x.jpg 2x" width="130" height="130">
-                <img class="card__image" src="images/top-dishes-image-2@1x.jpg" srcset="images/top-dishes-image-2@2x.jpg 2x" width="119" height="119" alt="Food image.">
-              </picture>
-
-              <span class="card__content">
-                <span class="card__tag card__tag--trending">Trending</span>
-                <h3 class="card__title">Swe dish</h3>
-
-                <span class="card__info">
-                  <span class="card__time">34min</span>
-                  <span class="card__raiting">4.9</span>
-                </span>
-
-                <span class="card__price-info">
-                  <span class="card__price">$19<span class="card__price--small">.99</span></span>
-                  <button class="card__button card__button--add">
-                    <span class="visually-hidden">Add to bookmarks.</span>
-                  </button>
-                </span>
-              </span>
-            </a>
-          </li>
-        </ul>
-
-        <a class="top-dishes__link" href="#"></a>
-      </section>
-
-      <section class="purchases">
+      <section class="purchases container">
         <div class="purchases__wrapper">
           <div class="purchases__inner">
             <h2 class="purchases__title">Control <span class="purchases__title--color">purchases</span> via dashboard</h2>
@@ -429,48 +454,50 @@
         </div>
       </section>
 
-      <section class="reviews">
-        <h2 class="reviews__title section-title"><span class="reviews__title--color">Customer</span> say</h2>
+      <section class="reviews container">
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title section-title"><span class="reviews__title--color">Customer</span> say</h2>
 
-        <ul class="reviews__list">
-          <li class="reviews__item review">
-            <div class="review__about-author">
-              <picture>
-                <source type="image/jpg" media="(min-width: 1440px)" srcset="images/review-author@1x.jpg 1x, images/review-author@2x.jpg 2x" width="71" height="71">
-                <source type="image/jpg" media="(min-width: 1024px)" srcset="images/review-author@1x.jpg 1x, images/review-author@2x.jpg 2x" width="51" height="51">
-                <img class="review__author-picture" src="images/review-author@1x.jpg" srcset="images/review-author@2x.jpg 2px" width="42" height="42" alt="Author photo.">
-              </picture>
+          <ul class="reviews__list">
+            <li class="reviews__item review">
+              <div class="review__about-author">
+                <picture>
+                  <source type="image/jpg" media="(min-width: 1440px)" srcset="images/review-author@1x.jpg 1x, images/review-author@2x.jpg 2x" width="71" height="71">
+                  <source type="image/jpg" media="(min-width: 1024px)" srcset="images/review-author@1x.jpg 1x, images/review-author@2x.jpg 2x" width="51" height="51">
+                  <img class="review__author-picture" src="images/review-author@1x.jpg" srcset="images/review-author@2x.jpg 2px" width="42" height="42" alt="Author photo.">
+                </picture>
 
-              <span class="review__author">
-                <span class="review__author-name">Alexander R.</span>
-                <span class="review__author-registration">01 year with us</span>
+                <span class="review__author">
+                  <span class="review__author-name">Alexander R.</span>
+                  <span class="review__author-registration">01 year with us</span>
+                </span>
+              </div>
+
+              <p class="review__text">“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time ”</p>
+              <span class="review__rating">
+                <span class="visually-hidden">5 stars out of 5.</span>
               </span>
-            </div>
+            </li>
 
-            <p class="review__text">“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time ”</p>
-            <span class="review__rating">
-              <span class="visually-hidden">5 stars out of 5.</span>
-            </span>
-          </li>
+            <li class="reviews__item review">
+              <p class="review__text">“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time ”</p>
+              <span class="review__rating">
+                <span class="visually-hidden">5 stars out of 5.</span>
+              </span>
+            </li>
 
-          <li class="reviews__item review">
-            <p class="review__text">“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time ”</p>
-            <span class="review__rating">
-              <span class="visually-hidden">5 stars out of 5.</span>
-            </span>
-          </li>
+            <li class="reviews__item review">
+              <p class="review__text">“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time ”</p>
+              <span class="review__rating">
+                <span class="visually-hidden">5 stars out of 5.</span>
+              </span>
+            </li>
+          </ul>
 
-          <li class="reviews__item review">
-            <p class="review__text">“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time ”</p>
-            <span class="review__rating">
-              <span class="visually-hidden">5 stars out of 5.</span>
-            </span>
-          </li>
-        </ul>
-
-        <span class="reviews__slider-bar">
-          <span></span>
-        </span>
+          <span class="reviews__slider-bar">
+            <span></span>
+          </span>
+        </div>
       </section>
 
       <section class="subscribe">
@@ -524,5 +551,7 @@
         </div>
       </footer>
     </main>
+
+    <script type="module" src="scripts/main.js"></script>
   </body>
 </html>
