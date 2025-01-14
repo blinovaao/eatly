@@ -1,0 +1,132 @@
+.download__wrapper {
+  padding: 68px 0 517px;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: calc(100% + 60px);
+    height: 1px;
+
+    background-color: #cbcbcb;
+
+    left: -30px;
+    bottom: 0;
+  }
+}
+
+.download__title {
+  margin: 0 auto 36px;
+
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+
+  max-width: 330px;
+
+  &--color {
+    color: $color-rich-blue;
+  }
+}
+
+.download__list {
+  padding: 0 0 0 18px;
+  margin: 0 0 35px 0;
+
+  list-style-type: none;
+
+  color: $color-dim-gray;
+}
+
+.download__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+
+    background-color: $color-dim-gray;
+
+    left: -11px;
+    top: 8px;
+  }
+
+  &:not(:last-child) {
+    margin: 0 0 16px;
+  }
+}
+
+.download__description {
+  margin: 0;
+
+  font-family: $ff-inter;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.download__button {
+  display: block;
+  box-sizing: border-box;
+
+  margin: 0 auto;
+  padding: 13px 44px 13px 17px;
+
+  font-size: 12px;
+  line-height: 15px;
+
+  max-width: 122px;
+
+  background-image: url("../../images/icons/stack.svg#white-arrow");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: top 50% right 17px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 111px;
+    height: 126px;
+
+    transform: rotate(107deg);
+
+    background-image: url("../../images/icons/stack.svg#curly-arrow");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    left: -89px;
+    top: 13px;
+  }
+}
+
+.download__image {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 209px;
+    height: 351px;
+
+    left: calc(50% + 17px);
+    bottom: 66px;
+
+    transform: translateX(-50%);
+
+    background-image: url("../../images/download-phone@2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

@@ -1,0 +1,152 @@
+.big-card {
+  display: flex;
+  flex-direction: column;
+
+  outline: 1px solid #f4f4f6;
+  border-radius: 24px;
+
+  background-color: $color-white;
+
+  overflow: hidden;
+
+  box-shadow: 5px 57px 28px 0 rgba(229, 229, 229, 0.7);
+
+  position: relative;
+}
+
+.big-card__link {
+  text-decoration: none;
+
+  color: $color-revolver;
+}
+
+.big-card__image {
+  display: block;
+
+  width: 100%;
+
+  margin: 0 0 9px;
+}
+
+.big-card__content {
+  padding: 0 21px 14px 27px;
+}
+
+.big-card__tag {
+  font-size: 10px;
+  line-height: 16px;
+
+  display: inline-block;
+
+  padding: 2px 7px 1px 6px;
+
+  border-radius: 4px;
+
+  &--healthy {
+    color: $color-galliano;
+    background-color: $color-gin-fizz;
+  }
+
+  &--trending {
+    color: $color-red-orange;
+    background-color: $color-your-pink;
+  }
+
+  &--supreme {
+    color: $color-eucalyptus;
+    background-color: $color-medium-sea-green;
+  }
+}
+
+.big-card__title {
+  margin: 0;
+
+  font-size: 21px;
+  line-height: 33px;
+  font-weight: 600;
+  letter-spacing: -0.1px;
+  text-transform: capitalize;
+}
+
+.big-card__inner {
+  margin: -10px 0 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.big-card__info {
+  font-family: $ff-manrope;
+  font-size: 15px;
+  line-height: 21px;
+
+  display: flex;
+  gap: 10px;
+
+  color: $color-manatee;
+
+  margin: 0 15px 0 0;
+}
+
+.big-card__time {
+  position: relative;
+
+  padding: 0 10px 0 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 4px;
+    height: 4px;
+
+    background-color: $color-manatee;
+
+    border-radius: 50%;
+
+    right: 0;
+    top: calc(50% + 1px);
+
+    transform: translateY(-50%);
+  }
+}
+
+.big-card__raiting {
+  padding: 0 0 0 24px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 20px;
+    height: 21px;
+
+    left: 0;
+    top: 0;
+
+    background-image: url("../../images/icons/stack.svg#purple-star");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.big-card__button {
+  border: none;
+
+  &--bookmark {
+    width: 32px;
+    height: 32px;
+
+    background-color: $color-melrose;
+
+    border-radius: 50%;
+
+    background-image: url("../../images/icons/stack.svg#bookmark");
+    background-repeat: no-repeat;
+    background-size: 13px 17px;
+    background-position: center;
+  }
+}

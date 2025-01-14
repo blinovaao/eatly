@@ -1,0 +1,177 @@
+.small-card {
+  display: flex;
+  flex-direction: column;
+
+  padding: 27px 13px 16px 15px;
+
+  outline: 1px solid #f4f4f6;
+  border-radius: 24px;
+
+  background-color: $color-white;
+
+  overflow: hidden;
+
+  box-shadow: 5px 57px 28px 0 rgba(229, 229, 229, 0.7);
+
+  position: relative;
+}
+
+.small-card__link {
+  text-decoration: none;
+
+  color: $color-revolver;
+}
+
+.small-card__image {
+  display: block;
+
+  margin: 0;
+}
+
+.small-card__content {
+  padding: 0;
+}
+
+.small-card__tag {
+  font-size: 8px;
+  line-height: 11px;
+  letter-spacing: -0.3px;
+
+  padding: 2px 5px 0 4px;
+
+  border-radius: 4px;
+
+  &--healthy {
+    color: $color-galliano;
+    background-color: $color-gin-fizz;
+  }
+
+  &--trending {
+    color: $color-red-orange;
+    background-color: $color-your-pink;
+  }
+
+  &--supreme {
+    color: $color-eucalyptus;
+    background-color: $color-medium-sea-green;
+  }
+}
+
+.small-card__title {
+  margin: -2px 0 1px;
+
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.small-card__info {
+  font-family: $ff-manrope;
+  font-size: 11px;
+  line-height: 15px;
+
+  display: flex;
+  gap: 7px;
+
+  color: $color-manatee;
+
+  margin: 0 0 8px;
+}
+
+.small-card__time {
+  position: relative;
+
+  padding: 0 7px 0 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 3px;
+    height: 3px;
+
+    background-color: $color-manatee;
+
+    border-radius: 50%;
+
+    right: 0;
+    top: calc(50%);
+
+    transform: translateY(-50%);
+  }
+}
+
+.small-card__raiting {
+  padding: 0 0 0 19px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 15px;
+    height: 16px;
+
+    left: 0;
+    top: -1px;
+
+    background-image: url("../../images/icons/stack.svg#purple-star");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.small-card__price-info {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 3px 0 0;
+}
+
+.small-card__price {
+  font-family: $ff-manrope;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 700;
+
+  &--small {
+    font-size: 12px;
+
+    color: $color-manatee;
+  }
+}
+
+.small-card__button {
+  border: none;
+
+  &--favourite {
+    position: absolute;
+
+    background-image: url("../../images/icons/stack.svg#heart");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-color: transparent;
+
+    width: 14px;
+    height: 12px;
+
+    top: 14px;
+    right: 14px;
+  }
+
+  &--add {
+    background-color: $color-revolver;
+    background-image: url("../../images/icons/stack.svg#plus");
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: center;
+
+    width: 29px;
+    height: 26px;
+
+    border-radius: 6px;
+  }
+}

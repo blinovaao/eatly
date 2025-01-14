@@ -13,7 +13,7 @@
   <body class="page__body">
     <header class="main-header container">
       <div class="main-header__wrapper">
-        <a class="main-header__logo" href="index.html" aria-current="page">
+        <a class="main-header__logo" href="index.html">
           <span class="visually-hidden">Main page.</span>
 
           <picture>
@@ -30,8 +30,8 @@
 
           <div class="header-nav__wrapper">
             <ul class="header-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="menu.html">Menu</a>
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link" href="menu.html" aria-current="page">Menu</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="blog.html">Blog</a>
@@ -53,78 +53,106 @@
       </div>
     </header>
 
-    <main>
-      <section class="hero container">
-        <div class="hero__wrapper">
-          <div class="hero__text">
-            <span class="hero__about-users">Over 1000 users</span>
-            <h1 class="hero__title">Enjoy foods <span class="hero__title--mobile-hidden">all </span>over <span class="hero__title--mobile-hidden">the </span><span class="hero__title--color">world</span></h1>
-            <p class="hero__description">EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get paychecks up to two days early. Get a <span class="hero__description--color">$20 bonus</span>.</p>
+    <main class="main--menu">
+      <h1 class="visually-hidden">Catalog of restaurants and dishes.</h1>
 
-            <div class="hero__buttons">
-              <a class="hero__button button button--primary" href="#">Get started</a>
-              <a class="hero__button button button--secondary" href="#">Go pro</a>
-            </div>
-
-            <div class="hero__rating rating">
-              <picture>
-                <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/raiting-logo.svg" width="123" height="30">
-                <source type="image/svg+xml" media="(min-width: 1024px)" srcset="images/raiting-logo.svg" width="87" height="21">
-                <img class="rating__logo" src="images/raiting-logo.svg" width="98" height="24" alt="Logo Trustpilot."/>
-              </picture>
-              <span class="rating__wrapper">
-                <span class="rating__stars">
-                  <span class="visually-hidden">5 stars.</span>
-                </span>
-                <span class="rating__amount">4900+</span>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-image"></div>
-      </section>
-
-      <section class="features">
-        <div class="features__wrapper">
-          <h2 class="visually-hidden">Our features.</h2>
-
-          <ul class="features__list">
-            <li class="features__item">
-              <h3 class="features__title">10K+</h3>
-              <p class="features__description">Satisfied costumers<br> all great over the world</p>
-            </li>
-
-            <li class="features__item">
-              <h3 class="features__title">4M</h3>
-              <p class="features__description">Healthy dishes sold<br> including milk shakes smooth</p>
-            </li>
-
-            <li class="features__item">
-              <h3 class="features__title">99.99%</h3>
-              <p class="features__description">Reliable customer support<br> we provide great experiences</p>
-            </li>
-          </ul>
+      <section class="banner container">
+        <div class="banner__wrapper">
+          <h2 class="visually-hidden">Special offer.</h2>
+          <p class="banner__text">50% off <span class="banner__text--color">weekend</span></p>
         </div>
       </section>
 
-      <section class="download container">
-        <div class="download__wrapper">
-          <h2 class="download__title">Premium <span class="download__title--color">quality</span> for your health</h2>
+      <section class="filter container">
+        <h2 class="visually-hidden">Filters.</h2>
 
-          <ul class="download__list">
-            <li class="download__item">
-              <p class="download__description">Premium quality food is made with ingredients that are packed with essential vitamins, minerals.</p>
-            </li>
-            <li class="download__item">
-              <p class="download__description">These foods promote overall wellness by support healthy digestion and boosting immunity</p>
-            </li>
-          </ul>
+        <div class="filter__wrapper">
+          <form class="filter-form" action="https://32.javascript.htmlacademy.pro/kekstagram" method="get">
+            <fieldset class="filter-form__group filter-form__group--checkbox">
+              <legend class="filter-form__group-title">Category</legend>
 
-          <a class="download__button button button--primary" href="#">Download</a>
+              <ul class="filter-form__group-list checkboxes">
+                <li class="checkboxes__item">
+                  <label class="checkboxes__text">
+                    Pizza
+                    <input class="checkboxes__input checkbox" type="checkbox" name="pizza">
+                  </label>
+                </li>
+
+                <li class="checkboxes__item">
+                  <label class="checkboxes__text">
+                    Asian
+                    <input class="checkboxes__input checkbox" type="checkbox" name="asian">
+                  </label>
+                </li>
+
+                <li class="checkboxes__item">
+                  <label class="checkboxes__text">
+                    Donat
+                    <input class="checkboxes__input checkbox" type="checkbox" name="donat">
+                  </label>
+                </li>
+
+                <li class="checkboxes__item">
+                  <label class="checkboxes__text">
+                    Ice
+                    <input class="checkboxes__input checkbox" type="checkbox" name="ice">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="filter-form__group filter-form__group--radio">
+              <legend class="filter-form__group-title">Sort by</legend>
+
+              <ul class="filter-form__group-list radio">
+                <li class="radio__item">
+                  <label class="radio__text">
+                    Recomended
+                    <input class="radio__input radio" type="radio" name="sort">
+                  </label>
+                </li>
+
+                <li class="radio__item">
+                  <label class="radio__text">
+                    Fast delivery
+                    <input class="radio__input radio" type="radio" name="sort">
+                  </label>
+                </li>
+
+                <li class="radio__item">
+                  <label class="radio__text">
+                    Most popular
+                    <input class="radio__input radio" type="radio" name="sort">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="filter-form__group filter-form__group--range">
+              <legend class="filter-form__group-title">Price</legend>
+
+              <input class="range__value" type="number" step="any" name="range-level" value="20">
+              <div class="range__slider"></div>
+            </fieldset>
+
+            <button class="filter-form__submit button button--primary" type="submit">Apply</button>
+          </form>
         </div>
+      </section>
 
-        <div class="download__image"></div>
+      <section class="search container">
+        <form class="search-form" method="get" action="menu.html">
+          <label>
+            <span class="visually-hidden"></span>
+            <input class="search-form__input" type="search" name="search" placeholder="Search">
+          </label>
+        </form>
+
+        <div class="search__sort sort">
+          <button class="sort__button button button--primary" type="button">Food</button>
+          <button class="sort__button button button--primary" type="button">Resturent</button>
+        </div>
       </section>
 
       <section class="top-restaurants container">
@@ -380,173 +408,50 @@
         </div>
       </section>
 
-      <section class="purchases container">
-        <div class="purchases__wrapper">
-          <div class="purchases__inner">
-            <h2 class="purchases__title">Control <span class="purchases__title--color">purchases</span> via dashboard</h2>
-            <ul class="purchases__list">
-              <li class="purchases__item order-card">
-                <picture>
-                  <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-dishes-image-1@1x.jpg 1px, images/top-dishes-image-1@2x.jpg 2px" width="72" height="72">
-                  <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-dishes-image-1@1x.jpg 1px, images/top-dishes-image-1@2x.jpg 2px" width="52" height="52">
-                  <img class="order-card__image" src="images/top-dishes-image-1@1x.jpg" srcset="images/top-dishes-image-1@2x.jpg 2x" width="48" height="48" alt="">
-                </picture>
+      <section class="faq">
+        <h2 class="faq__title section-title">Frequently asked <span class="faq__title--color">questions</span></h2>
 
-                <h3 class="order-card__title">Chicken hell</h3>
-                <span class="order-card__status">On the way</span>
-                <span class="order-card__day">3:09 PM</span>
-              </li>
+        <ul class="faq__list">
+          <li class="faq__item">
+            <p class="faq__question">How long does delivery take?</p>
+            <button class="faq__button" type="button">
+              <span class="visually-hidden">Open answer.</span>
+            </button>
+            <p class="faq__answer">Delivery usually takes 30-60 minutes, depending on distance and demand.</p>
+          </li>
 
-              <li class="purchases__item order-card">
-                <picture>
-                  <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-dishes-image-2@1x.jpg 1px, images/top-dishes-image-2@2x.jpg 2px" width="72" height="72">
-                  <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-dishes-image-2@1x.jpg 1px, images/top-dishes-image-2@2x.jpg 2px" width="52" height="52">
-                  <img class="order-card__image" src="images/top-dishes-image-2@1x.jpg" srcset="images/top-dishes-image-2@2x.jpg 2x" width="48" height="48" alt="">
-                </picture>
+          <li class="faq__item">
+            <p class="faq__question">How does it work?</p>
+            <button class="faq__button" type="button">
+              <span class="visually-hidden">Open answer.</span>
+            </button>
+            <p class="faq__answer">Food delivery works by you placing an order through an app or website, where a restaurant prepares your food. A delivery driver then picks it up and brings it to your location. You can track the delivery in real time.</p>
+          </li>
 
-                <h3 class="order-card__title">Swe dish</h3>
-                <span class="order-card__status">Delivered</span>
-                <span class="order-card__day">Yesterday</span>
-              </li>
+          <li class="faq__item">
+            <p class="faq__question">How does your food delivery service work?</p>
+            <button class="faq__button" type="button">
+              <span class="visually-hidden">Open answer.</span>
+            </button>
+            <p class="faq__answer">Our food delivery service is simple and quick. Just place an order on our website or app, and our team will prepare it fresh. Once ready, our delivery partner will bring it right to your door, with tracking available so you know when it’ll arrive. Enjoy your meal!</p>
+          </li>
 
-              <li class="purchases__item order-card">
-                <picture>
-                  <source type="image/jpg" media="(min-width: 1440px)" srcset="images/top-dishes-image-3@1x.jpg 1px, images/top-dishes-image-3@2x.jpg 2px" width="72" height="72">
-                  <source type="image/jpg" media="(min-width: 1024px)" srcset="images/top-dishes-image-3@1x.jpg 1px, images/top-dishes-image-3@2x.jpg 2px" width="52" height="52">
-                  <img class="order-card__image" src="images/top-dishes-image-3@1x.jpg" srcset="images/top-dishes-image-3@2x.jpg 2x" width="48" height="48" alt="">
-                </picture>
+          <li class="faq__item">
+            <p class="faq__question">What payment options do you accept?</p>
+            <button class="faq__button" type="button">
+              <span class="visually-hidden">Open answer.</span>
+            </button>
+            <p class="faq__answer">We accept a variety of payment options for your convenience, including credit and debit cards, mobile wallets like Apple Pay and Google Pay, and, in some locations, cash on delivery. Let us know if you need any help choosing the best option!</p>
+          </li>
 
-                <h3 class="order-card__title">Fish hell veg</h3>
-                <span class="order-card__status order-card__status--cancelled">Cancelled</span>
-                <span class="order-card__day">Yesterday</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="purchases__dashboard dashboard">
-            <div class="dashboard__inner">
-              <h3 class="dashboard__title">Purchases</h3>
-              <span class="dashboard__dropdown">This month</span>
-            </div>
-
-            <ul class="dashboard__list">
-              <li class="dashboard__item dashboard__item--expence dashboard-card">
-                <div class="dashboard-card__wrapper">
-                  <div class="dashboard-card__inner">
-                    <h3 class="dashboard-card__title">Expense</h3>
-                    <span class="dashboard-card__procent">Increased by 10%</span>
-                  </div>
-                  <span class="dashboard-card__order-price">$409.00</span>
-                </div>
-
-                <span class="dashboard-card__progress">
-                  <span class="dashboard-card__progress-bar"></span>
-                </span>
-              </li>
-
-              <li class="dashboard__item dashboard__item--voucher dashboard-card">
-                <div class="dashboard-card__wrapper">
-                  <div class="dashboard-card__inner">
-                    <h3 class="dashboard-card__title">Voucher usage</h3>
-                    <span class="dashboard-card__procent">Increased by 5%</span>
-                  </div>
-                  <span class="dashboard-card__order-price">$45.78</span>
-                </div>
-
-                <span class="dashboard-card__progress">
-                  <span class="dashboard-card__progress-bar"></span>
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="reviews container">
-        <div class="reviews__wrapper">
-          <h2 class="reviews__title section-title"><span class="reviews__title--color">Customer</span> say</h2>
-
-          <ul class="reviews__list">
-            <li class="reviews__item reviews__item--active review">
-              <div class="review__about-author">
-                <picture>
-                  <source type="image/jpg" media="(min-width: 1440px)" srcset="images/review-author@1x.jpg 1x, images/review-author@2x.jpg 2x" width="71" height="71">
-                  <source type="image/jpg" media="(min-width: 1024px)" srcset="images/review-author@1x.jpg 1x, images/review-author@2x.jpg 2x" width="51" height="51">
-                  <img class="review__author-picture" src="images/review-author@1x.jpg" srcset="images/review-author@2x.jpg 2px" width="42" height="42" alt="Author photo.">
-                </picture>
-
-                <span class="review__author">
-                  <span class="review__author-name">Alexander R.</span>
-                  <span class="review__author-registration"><span class="review__author-registration-time">01 year</span> with us</span>
-                </span>
-              </div>
-
-              <p class="review__text">“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time ”</p>
-              <div class="review__rating review__rating--5-stars rating">
-                <span class="rating__wrapper">
-                  <span class="rating__stars">
-                    <span class="visually-hidden">5 stars.</span>
-                  </span>
-                </span>
-              </div>
-            </li>
-
-            <li class="reviews__item review">
-              <div class="review__about-author">
-                <span class="review__author">
-                  <span class="review__author-name"></span>
-                  <span class="review__author-registration"><span class="review__author-registration-time">01 year</span> with us</span>
-                </span>
-              </div>
-
-              <p class="review__text">“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time ”</p>
-              <div class="review__rating review__rating--5-stars rating">
-                <span class="rating__wrapper">
-                  <span class="rating__stars">
-                    <span class="visually-hidden">5 stars.</span>
-                  </span>
-                </span>
-              </div>
-            </li>
-
-            <li class="reviews__item review">
-              <div class="review__about-author">
-                <span class="review__author">
-                  <span class="review__author-name"></span>
-                  <span class="review__author-registration"><span class="review__author-registration-time">01 year</span> with us</span>
-                </span>
-              </div>
-
-              <p class="review__text">“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time ”</p>
-              <div class="review__rating review__rating--5-stars rating">
-                <span class="rating__wrapper">
-                  <span class="rating__stars">
-                    <span class="visually-hidden">5 stars.</span>
-                  </span>
-                </span>
-              </div>
-            </li>
-          </ul>
-
-          <span class="reviews__slider-bar">
-            <button type="button" style="left: 0px;"></button>
-          </span>
-        </div>
-      </section>
-
-      <section class="subscribe container">
-        <div class="subscribe__wrapper">
-          <h2 class="subscribe__title">Get 50%</h2>
-
-          <form class="subscribe__form subscribe-form" action="https://32.javascript.htmlacademy.pro/kekstagram" method="post">
-            <label>
-              <span class="visually-hidden">Enter your email address.</span>
-              <input class="subscribe-form__input" type="text" placeholder="Email address">
-            </label>
-
-            <button class="subscribe-form__button button button--primary" type="submit">Subscribe</button>
-          </form>
-        </div>
+          <li class="faq__item">
+            <p class="faq__question">Do you offer discounts or promotions?</p>
+            <button class="faq__button" type="button">
+              <span class="visually-hidden">Open answer.</span>
+            </button>
+            <p class="faq__answer">Yes, we regularly offer discounts and promotions! Check our website or app for the latest deals, and subscribe to our newsletter to stay updated on special offers.</p>
+          </li>
+        </ul>
       </section>
     </main>
 

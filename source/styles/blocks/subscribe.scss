@@ -1,0 +1,88 @@
+.subscribe__wrapper {
+  padding: 36px 27px 95px;
+  margin: 0 0 calc(103px + 95px);
+
+  background-color: $color-rich-blue;
+
+  border-radius: 15px;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    left: 50%;
+    bottom: -103px;
+
+    transform: translateX(-50%);
+
+    background-image: url("../../images/subscribe-background@2x.png");
+    background-size: 100% 100%;
+
+    width: 170px;
+    height: 171px;
+  }
+}
+
+.subscribe__title {
+  margin: 0 auto 16px;
+
+  font-size: 42px;
+  line-height: 62px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.subscribe-form {
+  width: 100%;
+
+  background-color: rgba(255, 255, 255, 0.8);
+
+  border-radius: 9px;
+
+  position: relative;
+}
+
+.subscribe-form__input {
+  width: 100%;
+
+  padding: 17px 100px 15px 15px;
+
+  border: none;
+  border-radius: 9px;
+
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+
+  background-color: transparent;
+
+  &::placeholder {
+    color: #878787;
+
+    text-transform: capitalize;
+  }
+}
+
+.subscribe-form__button {
+  position: absolute;
+
+  right: 7px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  padding: 10px 16px 10px 17px;
+
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.8);
+
+  border-radius: 8px;
+}

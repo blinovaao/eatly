@@ -1,0 +1,77 @@
+
+
+.reviews__wrapper {
+  padding: 90px 0 79px;
+  max-width: calc(100vw - 60px);
+}
+
+.reviews__title {
+  margin: 0 auto 53px;
+
+  text-align: center;
+
+  max-width: 210px;
+
+  &--color {
+    color: $color-rich-blue;
+  }
+}
+
+.reviews__list {
+  @include list-style;
+
+  position: relative;
+  display: flex;
+  column-gap: 30px;
+
+  overflow-x: hidden;
+
+  margin: 0 0 46px;
+}
+
+.reviews__item {
+  width: fit-content;
+  min-width: 315px;
+}
+
+.reviews__item--active {
+  background-image: url("../../images/icons/stack.svg#quotes");
+}
+
+.reviews__item--active .review__about-author {
+  display: flex;
+}
+
+.reviews__item--active .review__text {
+  color: #636363;
+}
+
+.reviews__item--active .rating {
+  display: flex;
+}
+
+.reviews__slider-bar {
+  display: block;
+  width: calc(100% - 15px);
+  height: 5px;
+
+  margin: 0 auto;
+
+  border-radius: 23px;
+
+  background-color: rgba(108, 95, 188, 0.2);
+
+  position: relative;
+}
+
+.reviews__slider-bar button {
+  position: absolute;
+
+  height: 100%;
+  width: 86px;
+
+  background-color: #6c5fbc;
+
+  border: none;
+  border-radius: 23px;
+}

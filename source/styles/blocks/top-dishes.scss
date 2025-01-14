@@ -1,5 +1,5 @@
-.top-restaurants__wrapper {
-  padding: 84px 0 66px;
+.top-dishes__wrapper {
+  padding: 85px 0 66px;
 
   position: relative;
 
@@ -17,17 +17,28 @@
   }
 }
 
-.top-restaurants__list {
+.top-dishes__title {
+  max-width: 220px;
+
+  margin: 0 auto 59px;
+
+  &--color {
+    color: $color-rich-blue;
+  }
+}
+
+.top-dishes__list {
   @include list-style;
 
-  margin: 0 0 63px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  grid-gap: 44px 21px;
+
+  margin: 0 0 62px;
 }
 
-.top-restaurants__item:not(:last-child) {
-  margin: 0 0 40px;
-}
-
-.top-restaurants__item:not(:first-child)::before {
+.top-dishes__item:not(:first-child)::before {
   content: "";
   position: absolute;
 
@@ -40,17 +51,11 @@
   height: 0;
 }
 
-.top-restaurants__title {
-  margin: 0 0 57px;
-
-  text-transform: capitalize;
-
-  &--color {
-    color: $color-rich-blue;
-  }
+.top-dishes__item:nth-child(2)::before {
+  display: none;
 }
 
-.top-restaurants__link {
+.top-dishes__link {
   color: #acadb9;
 
   font-size: 20px;

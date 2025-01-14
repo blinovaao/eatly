@@ -1,0 +1,36 @@
+.socials {
+  @include list-style;
+
+  display: flex;
+  gap: 19px;
+  flex-wrap: wrap;
+}
+
+.socials__link {
+  display: block;
+
+  width: 17px;
+  height: 17px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--facebook {
+    background-image: url("../../images/social-facebook.svg");
+
+    width: 8px;
+  }
+
+  &--instagram {
+    background-image: url("../../images/social-instagram.svg");
+  }
+
+  &--linkedin {
+    background-image: url("../../images/social-linkedin.svg");
+  }
+
+  &--twitter {
+    background-image: url("../../images/social-twitter.svg");
+  }
+}

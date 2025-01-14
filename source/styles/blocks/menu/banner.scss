@@ -1,0 +1,64 @@
+.banner__wrapper {
+  background-color: $color-rich-blue;
+  background-image: url("../../../images/icons/stack.svg#banner-background");
+  background-position: -50px 0;
+  background-size: 252px 127px;
+
+  margin: 0 8px 75px 0;
+  padding: 12px 85px 11px 25px;
+
+  border-radius: 8px;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    background-image: url("../../../images/banner-image@2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    right: 15px;
+    bottom: -20px;
+
+    width: 102px;
+    height: 102px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    background-image: url("../../../images/icons/stack.svg#banner-decoration");
+    background-repeat: no-repeat;
+
+    right: -23px;
+    top: -16px;
+
+    width: 24px;
+    height: 21px;
+  }
+}
+
+.banner__text {
+  margin: 0;
+
+  font-size: 30px;
+  line-height: 46px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+
+  color: #f7f8fa;
+
+  &--color {
+    display: block;
+    margin-top: -21px;
+
+    font-size: 35px;
+    line-height: 53px;
+
+    color: #7c7fcd;
+  }
+}

@@ -1,0 +1,185 @@
+.dashboard {
+  background-color: $color-white;
+
+  border: 1px solid #edf2f7;
+  border-radius: 15px;
+
+  padding: 22px 22px 27px;
+
+  position: relative;
+}
+
+.dashboard::after {
+  content: "";
+  position: absolute;
+
+  width: 276px;
+  height: 213px;
+
+  left: 50%;
+  bottom: -62px;
+
+  transform: translateX(-50%);
+
+  z-index: -1;
+
+  border-radius: 8px;
+
+  background-color: rgba(50, 49, 66, 0.2);
+
+  filter: blur(40px);
+}
+
+.dashboard__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 0 22px;
+}
+
+.dashboard__title {
+  margin: 2px 0 0;
+
+  font-family: $ff-manrope;
+  font-size: 17px;
+  line-height: 23px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.dashboard__dropdown {
+  display: inline-block;
+
+  background-color: #fafafa;
+
+  font-family: $ff-manrope;
+  font-size: 11px;
+  line-height: 17px;
+  font-weight: 600;
+
+  padding: 8px 30px 7px 11px;
+
+  border-radius: 7px;
+
+  background-image: url("../../images/icons/stack.svg#arrow-down");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: right 10px center;
+}
+
+.dashboard__list {
+  @include list-style;
+}
+
+.dashboard__item {
+  border: 1px solid #edf2f7;
+  border-radius: 11px;
+
+  padding: 14px 13px 13px 12px;
+
+  position: relative;
+}
+
+.dashboard__item::before {
+  content: "";
+  position: absolute;
+
+  top: 16px;
+  left: 13px;
+
+  width: 29px;
+  height: 29px;
+
+  border-radius: 50%;
+
+  background-size: 16px 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dashboard__item--expence::before {
+  background-color: #f4f0ff;
+  background-image: url("../../images/icons/stack.svg#dashboard-expense");
+}
+
+.dashboard__item--voucher::before {
+  background-color: #f2fdf6;
+  background-image: url("../../images/icons/stack.svg#dashboard-voucher");
+}
+
+.dashboard__item:not(:last-child) {
+  margin: 0 0 13px 0;
+}
+
+.dashboard-card__wrapper {
+  padding: 0 0 0 42px;
+  margin: 0 0 10px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-card__title {
+  margin: 0 0 2px 0;
+
+  font-family: $ff-manrope;
+  font-size: 11px;
+  line-height: 17px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.dashboard-card__procent {
+  font-family: $ff-manrope;
+  font-size: 9px;
+  line-height: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+}
+
+.dashboard-card__order-price {
+  font-family: $ff-manrope;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 900;
+}
+
+.dashboard-card__progress {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  width: 100%;
+  height: 6px;
+
+  border-radius: 47px;
+}
+
+.dashboard-card__progress-bar {
+  display: block;
+
+  border-radius: 47px;
+
+  height: 100%;
+}
+
+.dashboard__item--expence .dashboard-card__progress {
+  background-color: rgba(108, 95, 188, 0.2);
+}
+
+.dashboard__item--expence .dashboard-card__progress-bar {
+  background-color: #6c5fbc;
+  width: 176px;
+}
+
+.dashboard__item--voucher .dashboard-card__progress {
+  background-color: rgba(251, 173, 24, 0.2);
+}
+
+.dashboard__item--voucher .dashboard-card__progress-bar {
+  background-color: #fbad18;
+  width: 145px;
+}

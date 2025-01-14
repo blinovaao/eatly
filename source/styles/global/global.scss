@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
   font-family: $ff-poppins;
   font-size: 11px;
@@ -7,4 +13,6 @@ body {
 
   background-color: $color-snow;
   color: $color-nero;
+
+  box-sizing: border-box;
 }

@@ -1,10 +1,10 @@
-.raiting {
+.rating {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.raiting__wrapper {
+.rating__wrapper {
   display: flex;
   justify-content: end;
   align-items: center;
@@ -12,7 +12,7 @@
   margin: 0 0 0 15px;
 }
 
-.raiting__stars {
+.rating__stars {
   display: inline-block;
 
   width: 81px;
@@ -24,7 +24,7 @@
   margin: 3px 0 0;
 }
 
-.raiting__amount {
+.rating__amount {
   font-family: $ff-plus-jakarta-sans;
   font-size: 14px;
   line-height: 19px;
