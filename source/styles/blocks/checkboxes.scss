@@ -1,0 +1,104 @@
+.checkboxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 14px;
+}
+
+.checkboxes__item {
+  display: flex;
+  justify-content: center;
+
+  padding: 55px 0 6px 0;
+
+  border: 3px solid transparent;
+  border-radius: 12px;
+
+  position: relative;
+
+  background-color: rgb(216, 216, 216);
+  background-repeat: no-repeat;
+  background-size: 31px 31px;
+  background-position: top 10px center;
+
+  &--pizza {
+    background-image: url("../../images/icons/stack.svg#category-pizza");
+    background-color: rgb(255, 222, 138, 0.35);
+    color: #d69900;
+  }
+
+  &--asian {
+    background-image: url("../../images/icons/stack.svg#category-asian");
+    background-size: 45px 36px;
+    background-color: #f7c5ba;
+    color: #fb471d;
+  }
+
+  &--donat {
+    background-image: url("../../images/icons/stack.svg#category-donat");
+    background-position: top 9px center;
+    background-color: rgb(237, 182, 107, 0.35);
+    color: #e28b14;
+  }
+
+  &--ice {
+    background-image: url("../../images/icons/stack.svg#category-ice");
+    background-size: 20px 37px;
+    background-position: top 7px center;
+    background-color: rgb(90, 133, 255, 0.35);
+    color: #002073;
+  }
+}
+
+.checkboxes__item.checked {
+  border-radius: 13px;
+
+  font-size: 11px;
+  line-height: 16px;
+
+  /* padding: 60 0 9px; */
+
+  transform: scale(1.13);
+}
+
+.checkboxes__item--pizza.checked {
+  border-color: rgb(214, 153, 0, 0.5);
+}
+
+.checkboxes__item--asian.checked {
+  border-color: rgb(251, 71, 29, 0.5);
+}
+
+.checkboxes__item--donat.checked {
+  border-color: rgb(226, 139, 20, 0.5);
+}
+
+.checkboxes__item--ice.checked {
+  border-color: rgb(0, 32, 115, 0.5);
+}
+
+.checkboxes__text {
+  display: block;
+  margin: 0 auto;
+
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 500;
+}
+
+.checkboxes__input {
+  position: absolute;
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  left: 0;
+  top: 0;
+
+  margin: 0;
+
+  appearance: none;
+}
+
