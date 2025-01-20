@@ -11,18 +11,32 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 .filter-form__group-list {
   @include list-style;
 }
 
-.filter-form__group--checkbox {
-  border: none;
+.filter-form__group-list.radio {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  row-gap: 8px;
+  justify-content: space-between;
 
+  margin: 0 0 24px;
+}
+
+.filter-form__group--checkbox {
   margin: 0 0 26px;
 
   & .filter-form__group-title {
     margin: 0 0 19px 0;
+  }
+}
+
+.filter-form__group--radio {
+  & .filter-form__group-title {
+    margin: 0 0 12px;
   }
 }
