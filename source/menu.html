@@ -132,8 +132,23 @@
             <fieldset class="filter-form__group filter-form__group--range">
               <legend class="filter-form__group-title">Price</legend>
 
-              <input class="range__value" type="number" step="any" name="range-level" value="20">
-              <div class="range__slider"></div>
+              <div class="range">
+                <input class="range__value" type="hidden" step="any" name="range-level" value="20">
+                <div class="range__container">
+                  <div class="range__base">
+                    <button class="range__button" type="button" style="left: 31px;"></button>
+                  </div>
+                </div>
+                
+                <ul class="range__list">
+                  <li class="range__item"><span class="range__text">$0</span></li>
+                  <li class="range__item"><span class="range__text">$25</span></li>
+                  <li class="range__item"><span class="range__text">$50</span></li>
+                  <li class="range__item"><span class="range__text">$100</span></li>
+                  <li class="range__item"><span class="range__text">$500</span></li>
+                  <li class="range__item"><span class="range__text">$1000</span></li>
+                </ul>
+              </div>
             </fieldset>
 
             <button class="filter-form__submit button button--primary" type="submit">Apply</button>

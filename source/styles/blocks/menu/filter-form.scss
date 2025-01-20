@@ -40,3 +40,17 @@
     margin: 0 0 12px;
   }
 }
+
+.filter-form__group--range {
+  margin: 0 0 32px;
+
+  & .filter-form__group-title {
+    margin: 0 0 24px;
+  }
+}
+
+.filter-form__submit {
+  width: 100%;
+
+  padding: 14px 25px 14px 24px;
+}
