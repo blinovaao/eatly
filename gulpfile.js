@@ -211,10 +211,21 @@ export function runDev (done) {
   )(done);
 }
 
-export const css = () => {
+export function css() {
   return gulp.src('./src/*.css')
     .pipe(postcss([
       autoprefixer(),
     ]))
-    .pipe(gulp.dest('./dest'))
+    .pipe(gulp.dest('./dest'));
+}
+
+import ghPages from 'gh-pages';
+import path from 'path';
+import process from 'node:process';
+
+export function deploy (done) {
+  ghPages.publish(path.join(process.cwd(), PATH_TO_DIST), {
+    branch: 'gh-pages',
+    dotfiles: true
+  }, done);
 }
