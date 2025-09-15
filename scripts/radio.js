@@ -1,0 +1,1 @@
+var e=document.querySelector(".radio"),i=document.querySelectorAll(".radio__item");i.forEach(c=>{let t=e.querySelector(".radio__input:checked");c.contains(t)&&c.classList.add("checked"),e.addEventListener("click",r=>{e.querySelector(".radio__item.checked").classList.remove("checked"),r.target.closest(".radio__item").classList.add("checked")})});

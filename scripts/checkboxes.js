@@ -1,0 +1,1 @@
+var t=document.querySelector(".checkboxes"),s=document.querySelectorAll(".checkboxes__item");s.forEach(e=>{e.querySelector(".checkboxes__input").checked&&e.classList.add("checked")});t.addEventListener("click",e=>{e.target.closest(".checkboxes__item").classList.toggle("checked")});
