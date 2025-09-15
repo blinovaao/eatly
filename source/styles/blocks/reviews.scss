@@ -1,8 +1,9 @@
 
 
 .reviews__wrapper {
-  padding: 90px 0 79px;
-  max-width: calc(100vw - 60px);
+  padding: 90px 30px 79px;
+  margin: 0 auto;
+  max-width: $vp-375;
 }
 
 .reviews__title {
@@ -23,8 +24,6 @@
   position: relative;
   display: flex;
   column-gap: 30px;
-
-  overflow-x: hidden;
 
   margin: 0 0 46px;
 }

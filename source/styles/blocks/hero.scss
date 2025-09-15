@@ -1,5 +1,9 @@
 .hero__wrapper {
-  padding: 58px 0 408px;
+  padding: 58px 21px 411px;
+  margin: 0 auto;
+  max-width: $vp-375;
+
+  text-align: center;
 }
 
 .hero__about-users {
@@ -10,7 +14,7 @@
 
   font-size: 9px;
   line-height: 11px;
-  letter-spacing: 1.7px;
+  letter-spacing: 1.5px;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
@@ -43,6 +47,8 @@
 
   margin: 0 0 16px;
 
+  max-width: 333px;
+
   &--color {
     color: $color-rich-blue;
   }
@@ -60,7 +66,9 @@
 
   color: $color-dim-gray;
 
-  margin: 0 0 41px;
+  margin: 0 auto 41px;
+
+  max-width: 308px;
 
   opacity: 0.7;
 
@@ -80,7 +88,7 @@
 }
 
 .hero__buttons .button--secondary {
-  padding: 14px 22px 12px 22px;
+  padding: 14px 21px 10px 22px;
 }
 
 .hero-image {
@@ -93,8 +101,10 @@
     width: 345px;
     height: 299px;
 
-    left: -4px;
+    left: calc(50% + 10px);
     bottom: 65px;
+
+    transform: translateX(-50%);
 
     background-image: url("../../images/hero-background@2x.png");
     background-repeat: no-repeat;

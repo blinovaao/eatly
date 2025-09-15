@@ -1,5 +1,7 @@
 .purchases__wrapper {
-  padding: 86px 0 106px;
+  padding: 84px 30px 106px;
+  margin: 0 auto;
+  max-width: $vp-375;
 
   position: relative;
 }
@@ -34,7 +36,7 @@
 
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 9px;
 
   position: relative;
 
@@ -47,13 +49,13 @@
     width: 111px;
     height: 126px;
 
-    transform: rotate(271deg);
+    transform: rotate(272deg);
 
     background-image: url("../../images/icons/stack.svg#curly-arrow");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
-    right: -8px;
+    right: -9px;
     bottom: -80px;
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  padding: 27px 13px 16px 15px;
+  padding: 27px 13px 17px 15px;
 
   outline: 1px solid #f4f4f6;
   border-radius: 24px;
@@ -136,6 +136,8 @@
   line-height: 26px;
   font-weight: 700;
 
+  padding: 1px 0 0;
+
   &--small {
     font-size: 12px;
 
@@ -155,10 +157,10 @@
     background-position: center;
     background-color: transparent;
 
-    width: 14px;
-    height: 12px;
+    width: 15px;
+    height: 13px;
 
-    top: 14px;
+    top: 15px;
     right: 14px;
   }
 

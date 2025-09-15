@@ -2,14 +2,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  gap: 15px;
 }
 
 .rating__wrapper {
   display: flex;
   justify-content: end;
   align-items: center;
+  gap: 4px;
 
-  margin: 0 0 0 15px;
+  margin: 0;
+  padding: 1px 0 0;
+}
+
+.rating__logo {
+  display: block;
 }
 
 .rating__stars {
@@ -26,9 +34,9 @@
 
 .rating__amount {
   font-family: $ff-plus-jakarta-sans;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 19px;
   font-weight: 500;
 
-  padding: 6px 0 0 2px;
+  padding: 6px 0 0;
 }

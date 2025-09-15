@@ -1,5 +1,7 @@
 .top-dishes__wrapper {
-  padding: 85px 0 66px;
+  padding: 85px 30px 66px;
+  margin: 0 auto;
+  max-width: $vp-375;
 
   position: relative;
 
@@ -33,26 +35,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  grid-gap: 44px 21px;
+  grid-gap: 43px 21px;
 
   margin: 0 0 62px;
-}
-
-.top-dishes__item:not(:first-child)::before {
-  content: "";
-  position: absolute;
-
-  top: 0;
-  left: 0;
-
-  box-shadow: 5px 0 23px 16px rgba(229, 229, 229, 0.7);
-
-  width: 100%;
-  height: 0;
-}
-
-.top-dishes__item:nth-child(2)::before {
-  display: none;
 }
 
 .top-dishes__link {

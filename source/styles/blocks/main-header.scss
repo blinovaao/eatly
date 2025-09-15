@@ -3,7 +3,9 @@
 }
 
 .main-header__wrapper {
-  padding: 106px 0 0;
+  padding: 106px 32px 0 31px;
+  margin: 0 auto;
+  max-width: $vp-375;
 
   position: relative;
 
@@ -12,10 +14,12 @@
     position: absolute;
 
     bottom: 0;
-    left: 0;
+    left: 50%;
 
-    width: 100%;
+    width: calc(100% - 63px);
     height: 1px;
+
+    transform: translateX(-50%);
 
     background-color: #cbcbcb;
   }
@@ -25,5 +29,9 @@
   display: block;
   position: absolute;
   top: 33px;
-  left: 0;
+  left: 31px;
+}
+
+.main-header__logo-image {
+  display: block;
 }

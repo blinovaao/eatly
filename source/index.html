@@ -11,7 +11,7 @@
   </head>
 
   <body class="page__body">
-    <header class="main-header container">
+    <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html" aria-current="page">
           <span class="visually-hidden">Main page.</span>
@@ -53,13 +53,13 @@
       </div>
     </header>
 
-    <main>
-      <section class="hero container">
+    <main class="main">
+      <section class="hero">
         <div class="hero__wrapper">
           <div class="hero__text">
             <span class="hero__about-users">Over 1000 users</span>
             <h1 class="hero__title">Enjoy foods <span class="hero__title--mobile-hidden">all </span>over <span class="hero__title--mobile-hidden">the </span><span class="hero__title--color">world</span></h1>
-            <p class="hero__description">EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get paychecks up to two days early. Get a <span class="hero__description--color">$20 bonus</span>.</p>
+            <p class="hero__description">Eatly help you set saving goals, earn cash back offers, Go to disclaimer for more details and get paychecks up to two days early. Get a <span class="hero__description--color">$20 bonus</span>.</p>
 
             <div class="hero__buttons">
               <a class="hero__button button button--primary" href="#">Get started</a>
@@ -108,9 +108,9 @@
         </div>
       </section>
 
-      <section class="download container">
+      <section class="download">
         <div class="download__wrapper">
-          <h2 class="download__title">Premium <span class="download__title--color">quality</span> for your health</h2>
+          <h2 class="download__title">Premium <span class="download__title--color">quality</span><br> for your health</h2>
 
           <ul class="download__list">
             <li class="download__item">
@@ -127,7 +127,7 @@
         <div class="download__image"></div>
       </section>
 
-      <section class="top-restaurants container">
+      <section class="top-restaurants">
         <div class="top-restaurants__wrapper">
           <h2 class="top-restaurants__title section-title">Our top <span class="top-restaurants__title--color">restaurants</span></h2>
 
@@ -215,7 +215,7 @@
         </div>
       </section>
 
-      <section class="top-dishes container">
+      <section class="top-dishes">
         <div class="top-dishes__wrapper">
           <h2 class="top-dishes__title section-title">Our top <span class="top-dishes__title--color">dishes</span></h2>
 
@@ -380,7 +380,7 @@
         </div>
       </section>
 
-      <section class="purchases container">
+      <section class="purchases">
         <div class="purchases__wrapper">
           <div class="purchases__inner">
             <h2 class="purchases__title">Control <span class="purchases__title--color">purchases</span> via dashboard</h2>
@@ -462,7 +462,7 @@
         </div>
       </section>
 
-      <section class="reviews container">
+      <section class="reviews">
         <div class="reviews__wrapper">
           <h2 class="reviews__title section-title"><span class="reviews__title--color">Customer</span> say</h2>
 
@@ -534,55 +534,53 @@
         </div>
       </section>
 
-      <section class="subscribe container">
+      <section class="subscribe">
         <div class="subscribe__wrapper">
-          <h2 class="subscribe__title">Get 50%</h2>
+          <div class="subscribe__inner">
+            <h2 class="subscribe__title">Get 50%</h2>
 
-          <form class="subscribe__form subscribe-form" action="https://32.javascript.htmlacademy.pro/kekstagram" method="post">
-            <label>
-              <span class="visually-hidden">Enter your email address.</span>
-              <input class="subscribe-form__input" type="text" placeholder="Email address">
-            </label>
+            <form class="subscribe__form subscribe-form" action="https://32.javascript.htmlacademy.pro/kekstagram" method="post">
+              <label>
+                <span class="visually-hidden">Enter your email address.</span>
+                <input class="subscribe-form__input" type="text" placeholder="Email address">
+              </label>
 
-            <button class="subscribe-form__button button button--primary" type="submit">Subscribe</button>
-          </form>
+              <button class="subscribe-form__button button button--primary" type="submit">Subscribe</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <div class="main-footer__navigation">
-          <a class="main-footer__logo" href="index.html">
-            <span class="visually-hidden">Main page.</span>
+        <a class="main-footer__logo" href="index.html">
+          <span class="visually-hidden">Main page.</span>
 
-            <picture>
-              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo.svg" width="151" height="57">
-              <source type="image/svg+xml" media="(min-width: 1024px)" srcset="images/logo.svg" width="108" height="41">
-              <img class="main-footer__logo-image" src="images/logo.svg" width="100" height="37" alt="Logo Eatly.">
-            </picture>
-          </a>
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo.svg" width="151" height="57">
+            <source type="image/svg+xml" media="(min-width: 1024px)" srcset="images/logo.svg" width="108" height="41">
+            <img class="main-footer__logo-image" src="images/logo.svg" width="100" height="37" alt="Logo Eatly.">
+          </picture>
+        </a>
 
-          <nav class="main-footer-nav">
-            <ul class="main-footer-nav__list">
-              <li class="main-footer-nav__item"><a class="main-footer-nav__link" href="blog.html">Blog</a></li>
-              <li class="main-footer-nav__item"><a class="main-footer-nav__link" href="pricing.html">Pricing</a></li>
-              <li class="main-footer-nav__item"><a class="main-footer-nav__link" href="about.html">About us</a></li>
-              <li class="main-footer-nav__item"><a class="main-footer-nav__link" href="contacts.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="main-footer__info">
-          <p class="main-footer__copyright">© 2023 EATLY all rights reserved.</p>
-
-          <ul class="main-footer__socials socials">
-            <li class="socials__item"><a class="socials__link socials__link--instagram" href="https://instagram.com/"><span class="visually-hidden">Instagram.</span></a></li>
-            <li class="socials__item"><a class="socials__link socials__link--linkedin" href="https://www.linkedin.com/"><span class="visually-hidden">Linkedin.</span></a></li>
-            <li class="socials__item"><a class="socials__link socials__link--facebook" href="http://facebook.com/"><span class="visually-hidden">Facebook.</span></a></li>
-            <li class="socials__item"><a class="socials__link socials__link--twitter" href="http://twitter.com/"><span class="visually-hidden">Twitter.</span></a></li>
+        <nav class="main-footer-nav">
+          <ul class="main-footer-nav__list">
+            <li class="main-footer-nav__item"><a class="main-footer-nav__link" href="blog.html">Blog</a></li>
+            <li class="main-footer-nav__item"><a class="main-footer-nav__link" href="pricing.html">Pricing</a></li>
+            <li class="main-footer-nav__item"><a class="main-footer-nav__link" href="about.html">About us</a></li>
+            <li class="main-footer-nav__item"><a class="main-footer-nav__link" href="contacts.html">Contact</a></li>
           </ul>
-        </div>
+        </nav>
+
+        <p class="main-footer__copyright">© 2023 EATLY all rights reserved.</p>
+
+        <ul class="main-footer__socials socials">
+          <li class="socials__item"><a class="socials__link socials__link--instagram" href="https://instagram.com/"><span class="visually-hidden">Instagram.</span></a></li>
+          <li class="socials__item"><a class="socials__link socials__link--linkedin" href="https://www.linkedin.com/"><span class="visually-hidden">Linkedin.</span></a></li>
+          <li class="socials__item"><a class="socials__link socials__link--facebook" href="http://facebook.com/"><span class="visually-hidden">Facebook.</span></a></li>
+          <li class="socials__item"><a class="socials__link socials__link--twitter" href="http://twitter.com/"><span class="visually-hidden">Twitter.</span></a></li>
+        </ul>
       </div>
     </footer>
 
